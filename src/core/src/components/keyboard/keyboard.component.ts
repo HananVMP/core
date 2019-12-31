@@ -216,6 +216,7 @@ export class MatKeyboardComponent implements OnInit {
    * simulates clicking `Shift` key
    */
   onShiftClick() {
+    console.log("Shift Pressed");
     // invert modifier meaning
     this._modifier = this._invertShiftModifier(this._modifier);
 
