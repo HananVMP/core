@@ -1,5 +1,5 @@
 {
-  "name": "ngx-material-keyboard-src",
+  "name": "ngx-material-keyboard",
   "version": "0.1.1",
   "description": "Onscreen virtual keyboard for Angular ≥ 5 (https://angular.io/) using Material 2 (https://material.angular.io/).",
   "repository": {
@@ -24,7 +24,7 @@
     "lint": "npm run lint:ts && npm run lint:sass",
     "lint:ts": "ng lint --type-check=true",
     "lint:sass": "sass-lint --verbose --no-exit --config ./.sass-lint.yml",
-    "postinstall": "npm rebuild node-sass"
+    "postinstall": "cd node_modules/ngx-material-keyboard && npm install && npm run build"
   },
   "dependencies": {
     "@angular/animations": "5.2.5",
